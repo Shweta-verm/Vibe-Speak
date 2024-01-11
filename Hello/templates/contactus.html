@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{% static 'signin.css' %}">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+    
+    </style>
+<body>
+    <div class="login">
+        <h1>Contact Us</h1> <br>
+        <form method='POST' action='/contactus' required>
+        {% csrf_token %}
+            <input type="text" placeholder="Enter your Name" name="Name" id="Name">
+            <input type="text" placeholder=" Enter Your Email" name="email" required> 
+            <div class='in_'>
+              <textarea name="message" id="" cols="30" placeholder='Enter Your Message' rows="10" required></textarea>
+            </div>
+
+            
+            <div class="submit">
+                <input type="submit" value="SEND">
+            </div>
+            
+
+        
+        {% comment %} <div class="n_"> 
+            <p>Not have an account?</p>
+             
+        </div>
+        <div class="link">
+            <a href="/signup">Sign Up Here</a>
+        </div> {% endcomment %}
+       </form>
+
+    </div>
+    
+
+</body>
+</html>
+
+

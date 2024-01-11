@@ -1,0 +1,64 @@
+*{
+    padding: 0;margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color:#ff7200;
+}
+
+
+.login{
+    /* background-color: aliceblue; */
+    width: 330px;
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top:180px ;
+    height: 330px;
+    
+
+
+    
+    
+
+}
+.login form input{
+    
+    margin: 10px;
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 5px;
+    width: 250px;
+    padding: 10px;
+
+}
+.submit{
+    height: 45px;
+    display: flex;
+    /* align-content: center; */
+    width: 130px; 
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: auto;
+    /* background-color: rgb(87, 87, 155); */  
+    
+
+}
+
+.submit input{
+    /* padding-bottom: px; */
+    background-color: rgb(87, 87, 155);
+    color: aliceblue;
+    font-weight: bold;
+    cursor: pointer; 
+    /* font-size:20px; */
+}
+
+.n_{
+    margin: 10px;
+    color: black;
+}

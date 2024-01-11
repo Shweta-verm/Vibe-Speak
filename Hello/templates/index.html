@@ -1,0 +1,262 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="https://kit.fontawesome.com/ba1169036d.js" crossorigin="anonymous"></script>
+
+   
+   
+  
+</head>
+  
+
+<body>
+    <div id="header">
+        
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>VibeSpeak</h1>
+                    
+                    
+                </div>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a  href='/#about'>About</a></li>
+                    <li><a href="/#services" >Services</a></li>
+                    {% comment %} <li><a href="contactus">Contactus</a></li> {% endcomment %}
+             <li style="background-color:  #ff7200; font-family: 'Times New Roman';
+                    padding: 9px 25px;
+                    border: none;
+                    border-radius: 8px;
+                    transition:all 0.4 ease 0s ;
+                    font-family: 'Times New Roman';
+                    font-size: 17px;"><a href="signup">Sign Up</a></li>
+                    <li style="background-color:  #ff7200; font-family: 'Times New Roman';
+                    padding: 9px 25px;
+                    border: none;
+                    border-radius: 8px;
+                    transition:all 0.4 ease 0s ;
+                    font-family: 'Times New Roman';
+                    font-size: 17px;"><a href="signin">Sign In</a></li>
+                    
+                  
+                
+                </ul>
+            </nav>
+            
+            <div class="header-text">
+
+                <h1>Empowering Communication   <br>  <span>Through Sign Language</span>  <br> Recoginition</h1>
+
+            </div>
+        </div>
+
+    </div>
+    
+     {% comment %} {% if user.is_authenticated %}
+            <a href="/logout/" class="btn btn-outline-danger" type="submit"
+              >Logout</a
+            >
+            <a href="" class="btn btn-outline-success" type="submit"
+              >Hello, {{user.first_name|title}}</a
+            > {% endcomment %}
+            {% comment %} {% else %}
+
+            <a href="management/" class="btn btn-outline-danger" type="submit"
+              >Management</a
+            >
+            <a href="/signup" class="btn btn-outline-success" type="submit"
+              >Sign Up</a
+            >
+            <a href="/login" class="btn btn-outline-success" type="submit"
+              >Sign In</a
+            >
+            {% endif %} {% endcomment %}
+    <!-------------------------------------------------------------------------About-------------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img
+                src="{% static 'images/ss.png' %}"
+                 alt="img1">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>VIBE SPEAK is using advanced technology to break down communication barriers for the Deaf and hard of hearing community. It employs machine learning and computer vision to translate sign language into text or speech, prioritizing user-friendliness and accessibility. Key features include real-time translation, a sign language dictionary, and learning modules, promoting inclusivity and sign language education for all.</p>
+                    {% comment %} <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experiance</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+
+                    </div> {% endcomment %}
+                    {% comment %} <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span> <br> Designing Web Interfaces </li>
+                            <li><span>Problem Solving</span> <br> Designing Web Interfaces </li>
+                            <li><span>App Development</span> <br> Designing Web Interfaces </li>
+                        </ul>
+                    </div> {% endcomment %}
+                    {% comment %} <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-Current</span> <br> UI/UX Design Training at ABES Engineering College </li>
+                            <li><span>2019-2021</span> <br> Team lead at Starapp LLC. </li>
+                            <li><span>2017-2019</span> <br> UI/UX Design Executive  at coin Digital Ltd. </li>
+                        </ul>
+                    </div> {% endcomment %}
+{% comment %} 
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-Current</span> <br> UI/UX Design Training at ABES Engineering College </li>
+                            <li><span>2019-2021</span> <br> Team lead at Starapp LLC. </li>
+                            <li><span>2017-2019</span> <br> UI/UX Design Executive  at coin Digital Ltd. </li>
+                        </ul>
+                    </div> {% endcomment %}
+
+                   
+
+                
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------------------------------------------------------Services------------------------------------------------------- -->
+     {% comment %} <div class="services" id='services'>
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div style='background-image: url(img1.jpg);'> {% endcomment %}
+                    {% comment %} <i class="fa-solid fa-code"></i> {% endcomment %}
+                    {% comment %} <h2>Sign Language Detection</h2> {% endcomment %}
+                    {% comment %} <p> This system is to recognize and interpret sign language gestures. It translates these gestures into text , breaking down communication barriers and promoting inclusivity.</p> {% endcomment %}
+                    {% comment %} <a href="#">Learn More</a> {% endcomment %}
+                {% comment %} </div> {% endcomment %}
+                
+
+            
+            {% comment %} <div> {% endcomment %}
+                {% comment %} <i class="fa-solid fa-crop"></i> {% endcomment %}
+                {% comment %} <h2>Sign to Speech Convertor</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed dolores dolorem ad voluptatibus harum vitae necessitatibus!</p> {% endcomment %}
+                {% comment %} <a href="#">Learn More</a> {% endcomment %}
+            {% comment %} </div>
+            <div> {% endcomment %}
+                {% comment %} <i class="fa-brands fa-apple"></i> {% endcomment %}
+                {% comment %} <h2>Games</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed dolores dolorem ad voluptatibus harum vitae necessitatibus!</p> {% endcomment %}
+                {% comment %} <a href="#">Learn More</a> {% endcomment %}
+            {% comment %} </div>
+        </div>
+        </div>
+        </div>
+            
+
+        </div>
+      
+        
+
+    </div>
+        </div>
+     </div> {% endcomment %}
+
+<!------------------------------------------------------------------Portfolio------------------------------------------------------------------ -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img
+                src="{% static 'images/img1.jpg' %}"
+                 alt="img1">
+                <div class="layer">
+                    <h3>Sign Language Detection</h3>
+                    <p>This system is to recognize and interpret sign language gestures. It translates these gestures into text , breaking down communication barriers and promoting inclusivity.</p>
+                    <a href="#"></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img
+                src="{% static 'images/img2.jpg' %}"
+                 alt="img2">
+                <div class="layer">
+                    <h3>Sign to Speech</h3>
+                    <p>It facilitates communication by translating sign language gestures into spoken words, bridging the gap between deaf individuals who use sign language and those who do not understand it. </p>
+                    <a href="#"></a>
+                </div>
+
+            </div>
+
+            <div class="work">
+                <img
+                src="{% static 'images/img3.jpg' %}"
+                 alt="img3">
+                <div class="layer">
+                    <h3>Games</h3>
+                    <p>The Sign Language Games project is all about creating fun and educational games that use sign language. These games help people learn and practice sign language in an enjoyable way. The project aims to promote understanding and inclusivity by making sign language more accessible and engaging for everyone.</p>
+                    <a href="#"></a>
+                </div>
+
+            </div>
+
+        </div>
+        <a href="#" class="btn">See More</a>
+
+    </div>
+    
+</div>
+
+
+<!-- ------------------------------------------------------------Contact------------------------------------------------------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>contact@example.com</p>
+                <p>0123456789</p>
+                <div class="social-icons"></div>
+                <a href=""></a>
+            </div>
+            <div class="contact-right">
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        
+        
+
+
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            
+
+        }
+
+</script>
+    
+</body>
+</html>

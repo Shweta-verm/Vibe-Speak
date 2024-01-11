@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="{% static 'signup.css' %}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+        
+        </style>
+        
+    <body>
+</head>
+    <div class="sign_up">
+        <h1>Sign Up</h1>
+        
+        <form method="POST" action="/signup" >
+        {% csrf_token %}
+            <input type="text" placeholder="Name"  name="name"> <br>
+            <input type="text" placeholder="Email" name="email">
+            <br>
+            <input type="password" placeholder="password"  name="password">
+            <br>
+            <input type="password" placeholder="Re-Enter-Password" name="repassword">
+            <br>
+            <!-- <input type="button" placeholder="signup"> -->
+       
+       
+        <input type="Submit" value="Register Now">
+        {% comment %} <button>Sign Up</button> {% endcomment %}
+    
+        <div class="member">
+            Already a member? <a href="/signin"> Login here</a>
+
+        </div>
+     </form>
+    </div>
+
+    
+</body>
+</html>
