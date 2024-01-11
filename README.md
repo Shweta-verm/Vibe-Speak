@@ -1,3 +1,4 @@
+**Introduction**
 Sign language, whether it be American Sign Language (ASL), British Sign Language (BSL), or various other regional and custom sign languages, serves as a vital means of communication for millions of individuals around the world. However, the efficacy of sign language communication has long been limited by the divide between the signing community and those who are not fluent in sign languages. Bridging this gap through technology is not just a matter of convenience; it has profound implications for the inclusion and accessibility of individuals with 
 hearing impairments, fostering greater societal integration and equal opportunities.
 
